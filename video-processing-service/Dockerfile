@@ -7,13 +7,13 @@ WORKDIR /app
 # Copy package.json and package-lock.json into the working directory
 COPY package*.json ./
 
-# Install any needed packaged specified in package.json
+# Install all dependencies, including devDependencies
 RUN npm install
 
 # Copy app source inside the docker image
 COPY . .
 
-# Build the app
+# Compile TypeScript to JavaScript
 RUN npm run build
 
 ############################################################################
@@ -39,5 +39,4 @@ COPY --from=builder /app/dist ./dist
 EXPOSE 3000
 
 # Define the command to run your app using CMD which defines your runtime 
-# (only one CMD allowed)
-CMD [ "npm", "run", "start" ]
+CMD [ "node", "dist/index.js" ]
