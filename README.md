@@ -18,22 +18,3 @@ Frontend: TypeScript, Next.js
 Backend: Express.js, Docker, FFmpeg
 
 Cloud Services: Google Cloud Storage, Cloud Run, Firebase (Auth, Firestore), Pub/Sub
-
-## Installation:
-Clone the repository: git clone https://github.com/yourusername/platepals.git
-
-Install dependencies: npm install
-
-Set up Firebase and Google Cloud credentials.
-
-Run the development server: npm run dev
-
-## Usage:
-Sign up or log in to start uploading and viewing food review videos.
-
-Videos are processed and stored in multiple formats for optimal viewing.
-
-## Future Improvements:
-Implement advanced search and filter options for videos.
-
-Add a recommendation system based on user preferences.
