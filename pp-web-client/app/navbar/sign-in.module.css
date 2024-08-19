@@ -1,0 +1,18 @@
+.signin {
+  display: inline-block;
+  border: none;
+  color: #444a52;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.signin:hover {
+  background-color: #6d6d6d;
+  color: #ffffff;
+}
