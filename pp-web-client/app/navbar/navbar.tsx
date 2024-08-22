@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import Upload from "./upload"
 import styles from "./navbar.module.css";
 import SignIn from "./sign-in";
 import { onAuthStateChangedHelper } from "@/utilities/firebase/firebase";
@@ -28,10 +29,10 @@ export default function Navbar() {
         <Image width={40} height={40}
           src="/plate-pals-logo.svg" alt="PlatePals Logo" />
       </Link>
-      {
-        // TODO
-      }
-      <SignIn user={user} />
+      <div className={styles.rightSection}>
+        {user && <Upload />}
+        <SignIn user={user} />
+      </div>
     </nav>
   );
 }

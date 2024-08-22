@@ -4,3 +4,13 @@
   align-items: center;
   padding: 1em;
 }
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.rightSection>*:not(:last-child) {
+  margin-right: 8px;
+  /* Adjust spacing between Upload and SignIn */
+}
